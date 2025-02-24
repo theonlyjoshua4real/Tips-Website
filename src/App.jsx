@@ -1,11 +1,19 @@
-function App() {
+import Header from "./components/Header"
+import { default as Carousel } from "./components/Carousel"
+import FeaturedBettingTips from "./components/FeaturedBettingTips"
 
+function App() {
+  
 
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div>
+        <Header/>
+        <Carousel/>
+        <FeaturedBettingTips/>
+        
+      </div>
+      
     </>
   )
 }
