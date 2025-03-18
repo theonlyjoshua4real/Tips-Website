@@ -47,7 +47,7 @@ import {
           <Typography variant="small" color="white" className="font-normal uppercase">
             {title}
           </Typography>
-          <Typography variant="h1" color="white" className="mt-6 flex justify-center gap-1 text-2xl font-normal">
+          <Typography variant="h1" color="white" className="mt-6 flex justify-center gap-1 text-2xl font-normal font-montserrat">
             <span className="text-2xl">$</span>
             {price}
             <span className="self-end text-2xl ">/ {period}</span>
