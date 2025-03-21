@@ -1,5 +1,7 @@
 import React from 'react'
 import {default as Tabs} from './Tabs'
+import Notifications from './notifications'
+import { winningsMessages } from "../constants";
 
 
 const FeaturedBettingTips = () => {

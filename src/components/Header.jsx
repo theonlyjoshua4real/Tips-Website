@@ -21,6 +21,7 @@ import {
   ChevronUpIcon,
   SunIcon,
 } from "@heroicons/react/24/outline";
+import Notifications from "./notifications";
  
 const nestedMenuItems = [
   {
@@ -233,6 +234,7 @@ export default function NavigationbarWithDropdownMultilevelMenu() {
           </Button>
         </div>
       </Collapse>
+      <Notifications/>
     </Navbar>
   );
 }

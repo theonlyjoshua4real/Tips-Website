@@ -43,4 +43,7 @@
     .info-text {
       @apply font-montserrat text-slate-gray text-lg leading-7;
     }
+    .notification{
+      @apply fixed top-[75vh] left-[5vw] w-[70vw] md:w-[50vw] lg:w-[30vw] bg-yellow-200 text-black text-center p-3 z-50 rounded-md animate-slideIn;
+    }
   }
