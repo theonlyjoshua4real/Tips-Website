@@ -2,6 +2,7 @@ import React from 'react'
 import logolight from '../assets/logo-light.png'
 import { footerLinks, socialMedia } from '../constants'
 import { copyrightSign } from '../assets/svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -23,12 +24,13 @@ const Footer = () => {
 
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
           {footerLinks.map((section)=>(
-            <div key={section}>
+            <div key={section.title}>
               <h4 className="text-customYellow font-montserrat text-2xl leading-normal font-medium mb-6">{section.title}</h4>
               <ul>
                 {section.links.map((link)=>(
                   <li key={link.name} className="text-white-400 mt-3 text-base font-montserrat leading-normal hover:text-slate-gray cursor-pointer">
-                    <a href={link.link} className="text-white hover:text-customYellow">{link.name}</a>
+                    {/* <a href={link.link} className="text-white hover:text-customYellow">{link.name}</a> */}
+                    <Link to={`${link.link}`} className="text-white hover:text-customYellow">{link.name}</Link>
                   </li>
                 ))}
               </ul>

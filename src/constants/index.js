@@ -6,8 +6,8 @@ export const footerLinks = [
         title: "Links",
         links: [
             { name: "Home", link: "/" },
-            { name: "Membership", link: "/" },
-            { name: "Contact", link: "/" },
+            { name: "Membership", link: "/membership" },
+            { name: "Contact", link: "/contact" },
             { name: "Get Started", link: "/" },
             { name: "Login", link: "/" },
         ],
@@ -39,7 +39,7 @@ export const socialMedia = [
 
 export const winningsMessages = [
     "Emma R. won $100,000 Baseball!",
-    "John S. won $1,000,000 Football!",
+    "John S. won $780,000 Football!",
     "Sophia M. won $12,500 Basketball!",
     "Liam T. won $250,000 Soccer!",
     "Olivia H. won $75,000 Baseball!",

@@ -22,6 +22,7 @@ import {
   SunIcon,
 } from "@heroicons/react/24/outline";
 import Notifications from "./notifications";
+import { Link } from 'react-router-dom'
  
 const nestedMenuItems = [
   {
@@ -131,7 +132,9 @@ function NavList() {
         color="blue-gray"
         className="font-medium font-montserrat"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white dark:text-black">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white dark:text-black">
+          <Link to="/">Home</Link>
+        </ListItem>
       </Typography>
       <NavListMenu />
       <Typography
@@ -142,7 +145,7 @@ function NavList() {
         className="font-medium font-montserrat"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white dark:text-black">
-          Membership
+          <Link to="/membership">Membership</Link>
         </ListItem>
       </Typography>
       
@@ -153,7 +156,9 @@ function NavList() {
         color="blue-gray"
         className="font-medium font-montserrat"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white dark:text-black">Contact</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white dark:text-black">
+        <Link to="/contact">Contact</Link>
+        </ListItem>
       </Typography>
     </List>
   );
@@ -188,7 +193,7 @@ export default function NavigationbarWithDropdownMultilevelMenu() {
   const whitebtn = "text-black bg-white";
  
   return (
-    <Navbar className="mx-auto max-w-full px-4 py-2 rounded-none bg-black dark:bg-white" color="">
+    <Navbar className="mx-auto max-w-full px-4 py-2 rounded-none bg-black dark:bg-white" color="transparent">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
